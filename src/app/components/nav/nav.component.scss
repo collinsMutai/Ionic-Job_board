@@ -1,0 +1,66 @@
+.nav-toolbar {
+  --background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.logo-text {
+  color: #c6a02d;
+}
+
+.nav-icon {
+  font-size: 44px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #ffffff; /* Changed to white background */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the menu when 'open' class is applied */
+.dropdown-menu.open {
+  max-height: 500px; /* Adjust based on actual height needed */
+}
+
+/* Ensure vertical stacking */
+.dropdown-menu ion-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.dropdown-menu ion-item {
+  --background: #ffffff;
+  color: #000;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.cta-wrapper {
+  padding: 16px;
+  text-align: center;
+}
+
