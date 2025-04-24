@@ -1,0 +1,33 @@
+<div class="hero-container">
+  <h1 class="hero-title">Jobs</h1>
+
+  <form [formGroup]="jobForm" (ngSubmit)="onSearch()" class="job-form">
+    <ion-item lines="none">
+      <ion-label position="stacked">Search Job Now:</ion-label>
+      <ion-input
+        placeholder="e.g. Software Developer"
+        formControlName="search"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Job Location</ion-label>
+      <ion-input
+        placeholder="e.g. New York"
+        formControlName="location"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Job Category</ion-label>
+      <ion-input
+        placeholder="e.g. Engineering"
+        formControlName="category"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" class="search-btn"
+      >Search</ion-button
+    >
+  </form>
+</div>

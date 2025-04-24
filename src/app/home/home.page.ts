@@ -3,13 +3,14 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 import { HomeAboutComponent } from '../components/home-about/home-about.component';
 import { IonicModule } from '@ionic/angular';
 import { NavComponent } from '../components/nav/nav.component';
+import { HeroComponent } from '../components/hero/hero.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule, NavComponent],
+  imports: [IonicModule, NavComponent, HeroComponent],
 })
 export class HomePage {
   constructor() {}
