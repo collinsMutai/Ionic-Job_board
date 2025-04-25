@@ -4,13 +4,14 @@ import { HomeAboutComponent } from '../components/home-about/home-about.componen
 import { IonicModule } from '@ionic/angular';
 import { NavComponent } from '../components/nav/nav.component';
 import { HeroComponent } from '../components/hero/hero.component';
+import { JobcardsComponent } from "../components/jobcards/jobcards.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule, NavComponent, HeroComponent],
+  imports: [IonicModule, NavComponent, HeroComponent, JobcardsComponent],
 })
 export class HomePage {
   constructor() {}

@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  background-color: #ffffff; // White background for the component
+  padding: 16px;
+}
+
+ion-card {
+  margin-bottom: 16px;
+  --background: #f2f2f2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+ion-avatar img {
+  object-fit: cover;
+}
+
+ion-item {
+  --background: #f2f2f2 !important; // Match card's grey background
+  --ion-item-background: #f2f2f2 !important;
+  --color: #000; // White text color
+}
+
+ion-label h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-description {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.button-row ion-button {
+  flex-shrink: 0;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --min-width: auto;
+}
+
+.date-posted {
+  font-size: 12px;
+  margin-left: 12px;
+  white-space: nowrap;
+}

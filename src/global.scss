@@ -38,6 +38,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+
+
 /* Body font */
 body {
   font-family: "Open Sans", sans-serif;
@@ -78,29 +80,6 @@ span {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Global styles (global.scss) */
-
-/* Base Styles for Dark Mode */
-:root.md {
-  /* Set text color to black to override dark mode's white text */
-  --ion-text-color: #000 !important;
-
-  /* Override button text color to white for visibility */
-  --ion-button-text-color: #ffffff !important;
-
-  /* Override background and toolbar colors */
-  --ion-toolbar-background: #fff !important;
-  --ion-background-color: #fff !important;
-
-  /* Custom button styles */
-  --ion-button-background: #c6a02d !important;
-  --ion-color-base: #c6a02d !important;
-  --ion-color-contrast: #ffffff !important;
-
-  /* Custom styling for other components */
-  --ion-item-background: #ffffff !important;
-}
-
 /* Override specific button styles globally */
 ion-button.cta-btn {
   --background: #c6a02d !important;
@@ -113,10 +92,3 @@ ion-button.cta-btn {
   border-radius: 6px;
   // padding: 10px;
 }
-
-/* Optional: Force a lighter theme for other components in dark mode */
-:root.md ion-item {
-  --background: #fff;
-  --color: #000;
-}
-

@@ -1,0 +1,19 @@
+<ion-card *ngFor="let job of jobs">
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img [src]="job.image" alt="{{ job.title }}">
+    </ion-avatar>
+    <ion-label>
+      <h2>{{ job.title }}</h2>
+    </ion-label>
+  </ion-item>
+
+ <ion-card-content>
+  <p class="job-description">{{ job.description }}</p>
+  <div class="button-row">
+    <ion-button size="small" fill="outline" color="primary">View More</ion-button>
+    <p class="date-posted">{{ job.postedDate }}</p>
+  </div>
+</ion-card-content>
+
+</ion-card>
